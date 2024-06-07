@@ -1,0 +1,35 @@
+create:
+  username: ----Autotest-user-test
+  password: 12qw!@QW
+  title: Autotest-user-test-title
+update:
+  title: Title2
+  configuration-token_id: '88005553535'
+  #employeeADMemberOf: ''  # read-only field
+#  employeeModeGMBox: 'Терминал'  # dropdown
+  #employeeProfileTemplate: '' # dropdown
+  #employeeRole: 'USER'  # dropdown
+  configuration-sip-phone: 'video[size:720p]'
+  configuration-nfc_id: '42069'
+  configuration-rfid_id: '265'
+  configuration-vdi-host: Ночь светла, над рекой тихо светит луна,
+  configuration-vdi-session: И блестит серебром голубая волна.
+  configuration-vdi-user: Тёмный лес там в тиши изумрудных ветвей,
+  configuration-vdi-password: pswd
+  configuration-vdi-domain: Звонких песен своих не поёт соловей.
+  configuration-vdi-param1: Под луной расцвели голубые цветы,
+  configuration-vdi-param2: Они в сердце моём пробудили мечты.
+  configuration-sip-hostname: К тебе в грёзах лечу, твоё имя шепчу,
+  configuration-sip-username: Милый друг, нежный друг, о тебе все грущу.   - read only fields
+  configuration-sip-userid: '4'
+  configuration-sip-password: Милый друг, нежный друг
+  configuration-sip-voicemail: Я всем сердцем любя,
+  configuration-sip-vlanid: '47'
+  configuration-ad-username: В эту ночь при луне
+  configuration-ad-password: Вспоминаю тебя.
+  configuration-ad-server: В эту ночь при луне
+  configuration-ad-port: На чужой стороне
+  configuration-ad-base: Милый друг, нежный друг, вспоминай обо мне.
+  configuration-ad-telephone: Ночь светла, над рекой тихо светит луна
+  configuration-ad-filter: И блестит серебром голубая волна.
+  configuration-extra: Ночь светла

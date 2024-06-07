@@ -1,0 +1,32 @@
+---
+variables:
+  TEST_TARGETS:
+    value: "shura/"
+    description: Pytest targets
+  GMSERVER_ADDRESS:
+    value: http://autotest.ta.gm.corp/
+    description: Target GM-Server address
+  CHROMEDRIVER_PATH:
+    value: chromedriver
+    description: Path to chromedriver binary
+  REGISTRY: registry.dev.getmobit.ru
+  DOCKER_IMAGE:
+    value: $REGISTRY/selenium:0.3.0
+    description: Base runner image
+
+image: $DOCKER_IMAGE
+
+stages:
+  - test
+
+run_tests:
+  stage: test
+  script:
+    - 'echo "Test server: ${GMSERVER_ADDRESS}"'
+    - 'echo "Test targets: ${TEST_TARGETS:-All tests}". See https://docs.pytest.org/en/7.1.x/how-to/usage.html'
+    - pip install -r requirements.txt --default-timeout=180
+    - TEST_WEBDRIVER_HEADLESS=true pytest ${TEST_TARGETS} -v --reruns=2 --durations=0
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "parent_pipeline"
+    - if: $CI_PIPELINE_SOURCE == "pipeline"
+    - when: manual

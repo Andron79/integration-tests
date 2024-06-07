@@ -1,0 +1,15 @@
+# YAML
+---
+host: 'addc.kknd.gm.corp'
+port: '389'
+login: 'bot-install'
+password: '12qw!@QW'
+base_dn: 'dc=kknd,dc=gm,dc=corp'
+timeout: '60'
+SECURITY-filter: ''
+SUPER_ADMIN-filter: ''
+USER-filter: "(&(objectClass=person)(!(objectClass=computer))(|(sAMAccountName=ad_*)))"
+user_attrlist: "cn,sn,objectClass,sAMAccountName,objectGUID,userPrincipalName,thumbnailPhoto,telephoneNumber,memberOf,objectSid"
+mapping: "avatar=thumbnailPhoto,configuration.ad.member_of=memberOf,configuration.sip.username=telephoneNumber,password=userPrincipalName,title=cn,username=sAMAccountName"
+defaults: ""
+...

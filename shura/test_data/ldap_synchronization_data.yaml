@@ -1,0 +1,15 @@
+# YAML
+---
+host: 'msk-dc2.getmobit.ru'
+port: '636'
+login: 'usert'
+password: 'test123'
+base_dn: 'dc=getmobit,dc=ru'
+timeout: '1'
+SECURITY-filter: ''
+SUPER_ADMIN-filter: '(&(objectClass=person)(!(objectClass=computer))(|(sAMAccountName=u*)))'
+USER-filter: ""
+user_attrlist: "cn,sn,objectClass,sAMAccountName,objectGUID,userPrincipalName,objectSid,memberOf"
+mapping: "title=cn,username=sAMAccountName,password=userPrincipalName"
+defaults: ""
+...

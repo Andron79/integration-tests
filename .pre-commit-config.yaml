@@ -1,0 +1,52 @@
+exclude: ".venv/,build/,dist/,htmlcov/,venv/,.coverage,.env,coverage.xml"
+default_install_hook_types:
+  - commit-msg
+  - pre-commit
+repos:
+
+  ##### Formatters #####
+  - repo: https://github.com/psf/black
+    rev: 22.10.0
+    hooks:
+      - id: black
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v2.3.0
+    hooks:
+      - id: end-of-file-fixer
+      - id: pretty-format-json
+  - repo: https://github.com/PyCQA/docformatter
+    rev: v1.5.1
+    hooks:
+      - id: docformatter
+
+  ##### Linters #####
+
+  # Maybe: https://github.com/PyCQA/pydocstyle
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v2.3.0
+    hooks:
+      - id: check-ast
+      - id: check-docstring-first
+      - id: check-json
+      - id: check-merge-conflict
+      - id: check-toml
+      - id: check-yaml
+        args: ["--unsafe"]
+  - repo: https://github.com/pre-commit/pygrep-hooks
+    rev: v1.10.0
+    hooks:
+      - id: python-check-blanket-noqa
+      - id: python-check-blanket-type-ignore
+      - id: python-no-eval
+      - id: python-use-type-annotations
+  - repo: https://github.com/charliermarsh/ruff-pre-commit
+    rev: v0.0.248
+    hooks:
+      - id: ruff
+        args: ["--fix", "--line-length=120", "--ignore=E711"]
+  # Maybe (requires gitlab token): https://github.com/FalcoSuessgott/lint-gitlab-ci
+  - repo: https://github.com/jorisroovers/gitlint
+    rev: v0.18.0
+    hooks:
+      - id: gitlint
+        args: ["--ignore", "B6", "-c", "title-max-length.line-length=120", "--msg-filename"]

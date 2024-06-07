@@ -1,0 +1,69 @@
+create:
+  name: DEUTSCHLAND
+  title: title1
+  description: Hast viel geweint (geweint, geweint, geweint, geweint)
+  #gm-mode: # dropdown
+
+  vdi-host: Im Geist getrennt (getrennt, getrennt, getrennt, getrennt)
+  vdi-domain: Im Herz vereint (vereint, vereint, vereint, vereint)
+  vdi-session: Wir (wir sind, wir sind, wir sind, wir sind)
+  vdi-user-input: Sind schon sehr lang zusammen (ihr seid, ihr seid, ihr seid, ihr seid)
+  vdi-password-input: '111'
+  vdi-param1: Dein Atem kalt (so kalt, so kalt, so kalt, so kalt)
+  vdi-param2: Das Herz in Flammen (so heiß, so heiß, so heiß, so heiß)
+
+  sip-hostname: Du (du kannst, du kannst, du kannst, du kannst)
+  sip-username: Ich (ich weiß, ich weiß, ich weiß, ich weiß)
+  sip-userid: Wir (wir sind, wir sind, wir sind, wir sind)
+  sip-password: '111'
+  sip-phone: Ihr (ihr bleibt, ihr bleibt, ihr bleibt, ihr bleibt) # SIP params
+  sip-vlanid: Deuts
+  sip-voicemail: Will dich lieben und verdammen
+
+  ad-username: Deutschland, dein Atem kalt
+  ad-password: '111'
+  ad-server: Deutschland!
+  ad-port: Ich (du hast, du hast, du hast, du hast)
+  ad-base: Ich will dich nie verlassen (du weinst, du weinst, du weinst, du weinst)
+  ad-telephone: Man kann dich lieben (du liebst, du liebst, du liebst, du liebst)
+  ad-filter: Und will dich hassen (du hasst, du hasst, du hasst, du hasst)
+
+  extra: |
+    Ich (du hast, du hast, du hast, du hast) Ich will dich nie verlassen (du weinst, du weinst, du weinst, du weinst)
+    Man kann dich lieben (du liebst, du liebst, du liebst, du liebst)
+    Und will dich hassen (du hasst, du hasst, du hasst, du hasst)
+    Überheblich, überlegen
+    Übernehmen, übergeben
+    Überraschen, überfallen
+    Deutschland, Deutschland über allen
+update:
+  name: KOMM-SUSSER-TOD
+  title: title2
+  description: I've been a fool to myself.
+  #gm-mode: # dropdown
+
+  vdi-host: I thought that i could live for no one else,
+  vdi-domain: But now, through all the hurt and pain,
+  vdi-session: It's time for me to respect.
+  vdi-user-input: The ones you love mean more than anything.
+  vdi-password-input: '333' # password
+  vdi-param1: I feel the best thing i could do,
+  vdi-param2: Is end it all, and leave forever.
+
+  sip-hostname: What's done is done, it feels so bad,
+  sip-username: What once was happy now is sad.
+  sip-userid: I'll never love again.
+  sip-password: '333' # password
+  sip-phone: My world is ending. # SIP params
+  sip-vlanid: I
+  sip-voicemail: Cause now the guilt is all mine.
+
+  ad-username: Can't live without the trust from those you love.
+  ad-password: '333' # password
+  ad-server: I know we can't forget the past,
+  ad-port: You can't forget love and pride.
+  ad-base: Because of that, it's killing me inside.
+  ad-telephone: It all returns to nothing,
+  ad-filter: It all comes tumbling down, tumbling down, tumbling down.
+
+  extra: It all returns to nothing

@@ -1,0 +1,114 @@
+# YAML
+---
+SPACES_NOT_ALLOWED_ERROR:
+  host: 'addc.kknd.gm.corp'
+  port: '389'
+  login: 'bot-install'
+  password: '12qw!@QW'
+  base_dn: 'dc=k knd,dc=gm,dc=corp'
+  timeout: '60'
+  SECURITY-filter: ''
+  SUPER_ADMIN-filter: ''
+  USER-filter: "(&(objectClass=person)(!(objectClass=computer))(|(sAMAccountName=ad_*)))"
+  user_attrlist: "cn,sn, objectClass,sAMAccountName,objectGUID,userPrincipalName,thumbnailPhoto,telephoneNumber,memberOf,objectSid"
+  mapping: "avatar=thumbnailPhoto, configuration.ad.member_of=memberOf,configuration.sip.username=telephoneNumber,password=userPrincipalName,title=cn,username=sAMAccountName"
+  defaults: "configuration.gm_mode= web"
+
+INVALID_LDAP_FILTER:
+  host: 'addc.kknd.gm.corp'
+  port: '389'
+  login: 'bot-install'
+  password: '12qw!@QW'
+  base_dn: 'dc=kknd,dc=gm,dc=corp'
+  timeout: '60'
+  SECURITY-filter: ''
+  SUPER_ADMIN-filter: ''
+  USER-filter: "(&(objectClass=person)(!(objectClass=computer))(|(sAMAccountName=ad_*)))("
+  user_attrlist: "cn,sn,objectClass,sAMAccountName,objectGUID,userPrincipalName,thumbnailPhoto,telephoneNumber,memberOf,objectSid"
+  mapping: "avatar=thumbnailPhoto,configuration.ad.member_of=memberOf,configuration.sip.username=telephoneNumber,password=userPrincipalName,title=cn,username=sAMAccountName"
+  defaults: "configuration.gm_mode=web"
+
+INVALID_LDIF:
+  host: 'addc.kknd.gm.corp'
+  port: '389'
+  login: 'bot-install'
+  password: '12qw!@QW'
+  base_dn: 'dc1=kknd,dc=gm,dc=corp'
+  timeout: '60'
+  SECURITY-filter: ''
+  SUPER_ADMIN-filter: ''
+  USER-filter: "(&(objectClass=person)(!(objectClass=computer))(|(sAMAccountName=ad_*)))"
+  user_attrlist: "cn,sn,objectClass,sAMAccountName,objectGUID,userPrincipalName,thumbnailPhoto,telephoneNumber,memberOf,objectSid"
+  mapping: "avatar=thumbnailPhoto,configuration.ad.member_of=memberOf,configuration.sip.username=telephoneNumber,password=userPrincipalName,title=cn,username=sAMAccountName"
+  defaults: "configuration.gm_mode=web"
+
+DUPLICATE_ATTRIBUTES:
+  host: 'addc.kknd.gm.corp'
+  port: '389'
+  login: 'bot-install'
+  password: '12qw!@QW'
+  base_dn: 'dc=kknd,dc=gm,dc=corp'
+  timeout: '60'
+  SECURITY-filter: ''
+  SUPER_ADMIN-filter: ''
+  USER-filter: "(&(objectClass=person)(!(objectClass=computer))(|(sAMAccountName=ad_*)))"
+  user_attrlist: "cn,cn,sn,objectClass,sAMAccountName,objectGUID,userPrincipalName,thumbnailPhoto,telephoneNumber,memberOf,objectSid"
+  mapping: "avatar=thumbnailPhoto,configuration.ad.member_of=memberOf,configuration.sip.username=telephoneNumber,password=userPrincipalName,title=cn,username=sAMAccountName"
+  defaults: "configuration.gm_mode=web"
+
+MISSING_REQUIRED_ATTRIBUTES:
+  host: 'addc.kknd.gm.corp'
+  port: '389'
+  login: 'bot-install'
+  password: '12qw!@QW'
+  base_dn: 'dc=kknd,dc=gm,dc=corp'
+  timeout: '60'
+  SECURITY-filter: ''
+  SUPER_ADMIN-filter: ''
+  USER-filter: "(&(objectClass=person)(!(objectClass=computer))(|(sAMAccountName=ad_*)))"
+  user_attrlist: "thumbnailPhoto,telephoneNumber,memberOf,objectSid"
+  mapping: "avatar=thumbnailPhoto,configuration.ad.member_of=memberOf,configuration.sip.username=telephoneNumber,password=userPrincipalName,title=cn,username=sAMAccountName"
+  defaults: "configuration.gm_mode=web"
+
+INVALID_ATTRIBUTES:
+  host: 'addc.kknd.gm.corp'
+  port: '389'
+  login: 'bot-install'
+  password: '12qw!@QW'
+  base_dn: 'dc=kknd,dc=gm,dc=corp'
+  timeout: '60'
+  SECURITY-filter: ''
+  SUPER_ADMIN-filter: ''
+  USER-filter: "(&(objectClass=person)(!(objectClass=computer))(|(sAMAccountName=ad_*)))"
+  user_attrlist: "cn,sn,objectClass,sAMAccountName,objectGUID,userPrincipalName,telephoneNumber,memberOf,objectSid"
+  mapping: "avatar=thumbnailPhoto,configuration.ad.member_of=memberOf,configuration.sip.username=telephoneNumber,password=userPrincipalName,title=cn,username=sAMAccountName"
+  defaults: "configuration.gm_mode=web"
+
+EMPTY_ATTRIBUTES_PRESENT:
+  host: 'addc.kknd.gm.corp'
+  port: '389'
+  login: 'bot-install'
+  password: '12qw!@QW'
+  base_dn: 'dc=kknd,dc=gm,dc=corp'
+  timeout: '60'
+  SECURITY-filter: ''
+  SUPER_ADMIN-filter: ''
+  USER-filter: "(&(objectClass=person)(!(objectClass=computer))(|(sAMAccountName=ad_*)))"
+  user_attrlist: "cn,sn,objectClass,sAMAccountName,objectGUID,userPrincipalName,thumbnailPhoto,telephoneNumber,memberOf,objectSid"
+  mapping: "avatar=thumbnailPhoto,configuration.ad.member_of=memberOf,configuration.sip.username=telephoneNumber,password=userPrincipalName,title=cn,username=sAMAccountName,,"
+  defaults: "configuration.gm_mode=web"
+
+KEY_VALUE_SCHEMA_ERROR:
+  host: 'addc.kknd.gm.corp'
+  port: '389'
+  login: 'bot-install'
+  password: '12qw!@QW'
+  base_dn: 'dc=kknd,dc=gm,dc=corp,'
+  timeout: '60'
+  SECURITY-filter: ''
+  SUPER_ADMIN-filter: ''
+  USER-filter: "(&(objectClass=person)(!(objectClass=computer))(|(sAMAccountName=ad_*)))"
+  user_attrlist: "cn,sn,objectClass,sAMAccountName,objectGUID,userPrincipalName,thumbnailPhoto,telephoneNumber,memberOf,objectSid"
+  mapping: "avatar=thumbnailPhoto,configuration.ad.member_of=memberOf,configuration.sip.username=telephoneNumber,password=userPrincipalName,title=cn,username=sAMAccountName,"
+  defaults: "configuration.gm_mode=web,"
+...
